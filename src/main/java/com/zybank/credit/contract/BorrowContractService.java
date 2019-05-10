@@ -1,7 +1,14 @@
 package com.zybank.credit.contract;
 
 import annotations.ApplicationService;
+import annotations.RULE;
 import com.zybank.credit.contract.model.BorrowContract;
+import com.zybank.credit.contract.model.BorrowContractItem;
+import common.ExecuteResult;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @ApplicationService
 public class BorrowContractService {
@@ -11,8 +18,20 @@ public class BorrowContractService {
         this.repository = repository;
     }
 
-    public int create() {
-        repository.save(new BorrowContract(null, null, null));
-        return 1;
+    public ExecuteResult create(int amount, int rate, LocalDateTime expiredTime, List<String> productIdList) {
+        List<BorrowContractItem> borrowContractItems = createOneContractItemPerProduct(productIdList);
+
+        BorrowContract borrowContract = new BorrowContract(amount, rate, expiredTime, borrowContractItems);
+        return repository.save(borrowContract);
+    }
+
+    @RULE
+    private List<BorrowContractItem> createOneContractItemPerProduct(List<String> productIdList) {
+        //RULE: given multiple products, when create borrow contract, then create one contract item per product.
+        return productIdList.stream().map(BorrowContractItem::new).collect(Collectors.toList());
+    }
+
+    public BorrowContract byId(Integer contractId) {
+        return repository.byId(contractId);
     }
 }
