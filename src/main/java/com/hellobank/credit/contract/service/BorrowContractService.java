@@ -1,9 +1,10 @@
-package com.hellobank.credit.contract;
+package com.hellobank.credit.contract.service;
 
 import annotations.ApplicationService;
 import annotations.RULE;
 import com.hellobank.credit.contract.model.BorrowContract;
 import com.hellobank.credit.contract.model.BorrowContractItem;
+import com.hellobank.credit.contract.repository.BorrowContractRepository;
 import common.ExecuteResult;
 
 import java.time.LocalDateTime;

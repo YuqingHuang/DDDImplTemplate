@@ -1,4 +1,4 @@
-package com.hellobank.riskmgmt.limit;
+package com.hellobank.riskmgmt.limit.repository;
 
 import com.hellobank.riskmgmt.limit.model.CreditLimit;
 import com.hellobank.riskmgmt.limit.model.GeneralLimit;
