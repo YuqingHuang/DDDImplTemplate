@@ -1,8 +1,8 @@
-package com.zybank.riskmgmt.limit;
+package com.hellobank.riskmgmt.limit;
 
-import com.zybank.riskmgmt.limit.model.CreditLimit;
-import com.zybank.riskmgmt.limit.model.GeneralLimit;
-import com.zybank.riskmgmt.limit.model.ItemizedLimit;
+import com.hellobank.riskmgmt.limit.model.CreditLimit;
+import com.hellobank.riskmgmt.limit.model.GeneralLimit;
+import com.hellobank.riskmgmt.limit.model.ItemizedLimit;
 
 public class LimitRepository {
     public ItemizedLimit itemizedLimitBy(String creditLimitId, String itemizedLimitId) {

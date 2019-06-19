@@ -1,4 +1,4 @@
-package com.zybank.credit.contract.model;
+package com.hellobank.credit.contract.model;
 
 import annotations.AggregateRoot;
 import annotations.Entity;
@@ -25,4 +25,8 @@ public class BorrowContract {
         this.items = borrowContractItems;
     }
 
+
+    public List<BorrowContractItem> getItems() {
+        return items;
+    }
 }

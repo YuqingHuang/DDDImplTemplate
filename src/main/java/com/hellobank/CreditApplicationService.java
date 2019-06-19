@@ -1,7 +1,7 @@
-package com.zybank;
+package com.hellobank;
 
-import com.zybank.credit.contract.BorrowContractService;
-import com.zybank.riskmgmt.limit.LimitService;
+import com.hellobank.credit.contract.BorrowContractService;
+import com.hellobank.riskmgmt.limit.LimitService;
 import common.ExecuteResult;
 
 public class CreditApplicationService {

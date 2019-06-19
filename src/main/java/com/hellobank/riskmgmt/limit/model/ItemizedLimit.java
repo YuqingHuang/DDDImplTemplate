@@ -1,4 +1,4 @@
-package com.zybank.riskmgmt.limit.model;
+package com.hellobank.riskmgmt.limit.model;
 
 import annotations.Entity;
 

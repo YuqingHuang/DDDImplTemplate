@@ -1,9 +1,9 @@
-package com.zybank.credit.contract;
+package com.hellobank.credit.contract;
 
 import annotations.ApplicationService;
 import annotations.RULE;
-import com.zybank.credit.contract.model.BorrowContract;
-import com.zybank.credit.contract.model.BorrowContractItem;
+import com.hellobank.credit.contract.model.BorrowContract;
+import com.hellobank.credit.contract.model.BorrowContractItem;
 import common.ExecuteResult;
 
 import java.time.LocalDateTime;

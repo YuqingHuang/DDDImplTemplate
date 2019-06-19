@@ -1,4 +1,4 @@
-package com.zybank.credit.contract.model;
+package com.hellobank.credit.contract.model;
 
 import annotations.ValueObject;
 
