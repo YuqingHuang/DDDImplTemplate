@@ -4,7 +4,7 @@ import annotations.RULE;
 import com.hellobank.riskmgmt.limit.model.GeneralLimit;
 import com.hellobank.riskmgmt.limit.model.ItemizedLimit;
 import com.hellobank.riskmgmt.limit.repository.LimitRepository;
-import common.ExecuteResult;
+import com.hellobank.common.ExecuteResult;
 
 public class LimitService {
     private final LimitRepository repository;

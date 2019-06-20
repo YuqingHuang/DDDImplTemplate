@@ -1,4 +1,4 @@
-package common;
+package com.hellobank.common;
 
 public enum ExecuteResult {
     success( "success"),

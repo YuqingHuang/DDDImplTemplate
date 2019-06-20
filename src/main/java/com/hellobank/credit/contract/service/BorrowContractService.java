@@ -5,7 +5,7 @@ import annotations.RULE;
 import com.hellobank.credit.contract.model.BorrowContract;
 import com.hellobank.credit.contract.model.BorrowContractItem;
 import com.hellobank.credit.contract.repository.BorrowContractRepository;
-import common.ExecuteResult;
+import com.hellobank.common.ExecuteResult;
 
 import java.time.LocalDateTime;
 import java.util.List;

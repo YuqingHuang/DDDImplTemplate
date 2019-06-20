@@ -1,7 +1,7 @@
 package com.hellobank;
 
 
-import common.ExecuteResult;
+import com.hellobank.common.ExecuteResult;
 
 import java.time.LocalDateTime;
 import java.util.List;
