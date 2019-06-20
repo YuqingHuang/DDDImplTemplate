@@ -2,7 +2,7 @@ package com.hellobank;
 
 import com.hellobank.credit.contract.service.BorrowContractService;
 import com.hellobank.riskmgmt.limit.service.LimitService;
-import common.ExecuteResult;
+import com.hellobank.common.ExecuteResult;
 
 public class CreditApplicationService {
     private BorrowContractService borrowContractService;
